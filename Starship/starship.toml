@@ -37,7 +37,7 @@ format = "[ $all_status$ahead_behind ](fg:bg0 bg:green)[](fg:green)"
 # ---------- PROMPT
 [character]
 success_symbol = "[➜](bold #D3C6AA)"
-error_symbol = "[➜](bold red)"
+error_symbol = "[✗](bold red)"
 
 # ---------- DISABLE
 [package]
