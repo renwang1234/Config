@@ -1,0 +1,24 @@
+CompileFlags:
+  Compiler: x86_64-w64-mingw32-g++
+  Add: [
+    -D__CLANG_MAX_ALIGN_T_DEFINED,
+    -Wno-vla-extension,
+    "-IC:/MinGW/mingw64/x86_64-w64-mingw32/include",
+    "-IC:/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include",
+    "-IC:/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++",
+    "-IC:/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32",
+    -DLOCAL,
+    -Wall,
+    -O2,
+    -Wextra,
+    -Wshadow,
+    -Wconversion,
+    -Wfloat-equal,
+    -Wno-unused-const-variable,
+    -Wno-sign-conversion,
+    -std=c++17,
+  ] # ignore some specific warnings
+
+  CompilationDatabase: build/ # Search build/ directory for compile_commands.json
+Index:
+  Background: Skip
